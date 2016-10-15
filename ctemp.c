@@ -41,7 +41,7 @@ int main(int argc, char **argv) {
    ProcessArguments(fileName, argc, argv);
   
    if (careIfExists && access(fileName, 0) == 0) {
-      printf("File already exists\n");
+      printf("Error: File already exists.\n");
       return -1;
    }
  
